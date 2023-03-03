@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph_id"
+    app:startDestination="@id/blankFragment0">
+
+    <fragment
+        android:id="@+id/blankFragment0"
+        android:name="com.example.myapplication.BlankFragment0"
+        android:label="BlankFragment0"
+        tools:layout="@layout/fragment_blank0">
+
+
+        <action
+            android:id="@+id/action_blankFragment0_to_blankFragment1"
+            app:destination="@id/blankFragment1"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/blankFragment0"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/blankFragment1"
+        android:name="com.example.myapplication.BlankFragment1"
+        android:label="BlankFragment1"
+        tools:layout="@layout/fragment_blank1">
+
+
+        <action
+            android:id="@+id/action_blankFragment1_to_blankFragment2"
+            app:destination="@id/blankFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/blankFragment1"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.myapplication.BlankFragment2"
+        android:label="BlankFragment2"
+        tools:layout="@layout/fragment_blank2">
+
+
+        <action
+            android:id="@+id/action_blankFragment2_to_blankFragment3"
+            app:destination="@id/blankFragment3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blankFragment3"
+        android:name="com.example.myapplication.BlankFragment3"
+        android:label="BlankFragment3"
+        tools:layout="@layout/fragment_blank3">
+
+
+        <action
+            android:id="@+id/action_blankFragment3_to_blankFragment4"
+            app:destination="@id/blankFragment4"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/blankFragment3"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blankFragment4"
+        android:name="com.example.myapplication.BlankFragment4"
+        android:label="BlankFragment4"
+        tools:layout="@layout/fragment_blank4" />
+
+</navigation>
